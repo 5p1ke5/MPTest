@@ -1,4 +1,4 @@
-timerCD = game_get_speed(gamespeed_fps) * 5;
+timerCD = game_get_speed(gamespeed_fps) * 3;
 timer = timerCD;
 epoch = 0;
 
