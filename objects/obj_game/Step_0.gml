@@ -11,9 +11,9 @@ if (timer < 0)
 	buffer_seek(_buffer, buffer_seek_start, 0);
 	buffer_write(_buffer, buffer_u16, epoch);
 	
-	for (var _i = 0; _i < array_length(connections); _i++) 
+	for (var _i = 0; _i < array_length(sockets); _i++) 
 	{
-		network_send_packet(connections[_i], _buffer, buffer_tell(_buffer))
+		network_send_packet(sockets[_i], _buffer, buffer_tell(_buffer))
 	}
 	
 	buffer_delete(_buffer);
